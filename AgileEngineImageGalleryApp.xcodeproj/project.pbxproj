@@ -116,7 +116,6 @@
 		B39E77DE22534150004AA822 /* AgileEngineImageGalleryApp */ = {
 			isa = PBXGroup;
 			children = (
-				B39E77F722534188004AA822 /* Managers */,
 				B39E77F622534178004AA822 /* View */,
 				B39E77F52253416D004AA822 /* Models */,
 				B39E77F422534168004AA822 /* ViewModels */,
@@ -192,13 +191,6 @@
 				B39E781822535096004AA822 /* GalleryCollectionViewCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		B39E77F722534188004AA822 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

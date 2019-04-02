@@ -32,7 +32,6 @@ class PhotoViewController: UIViewController {
     
     func prepareUI() {
         
-        hero.isEnabled = true        
         scrollView.delegate = self
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 6.0

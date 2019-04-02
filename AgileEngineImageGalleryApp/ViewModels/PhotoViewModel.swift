@@ -26,7 +26,7 @@ class PhotoViewModel{
             switch response {
             case .success(let photo):
                 self.photo.accept(photo)
-            case .failure(let error):
+            case .failure:
                 //handle error
                 break
             }
