@@ -1,3 +1,5 @@
 Pods/
 
 AgileEngineImageGalleryApp\.xcworkspace/xcuserdata/ko7tya\.xcuserdatad/UserInterfaceState\.xcuserstate
+
+*.xcbkptlist

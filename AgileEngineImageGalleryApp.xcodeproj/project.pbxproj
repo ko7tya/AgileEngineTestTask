@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9E008E72C66B194C2232F7EB /* Pods_AgileEngineImageGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39E0C6F869B219293655942 /* Pods_AgileEngineImageGalleryApp.framework */; };
 		B39E77E022534150004AA822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39E77DF22534150004AA822 /* AppDelegate.swift */; };
-		B39E77E222534150004AA822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39E77E122534150004AA822 /* ViewController.swift */; };
 		B39E77E522534150004AA822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39E77E322534150004AA822 /* Main.storyboard */; };
 		B39E77E722534150004AA822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B39E77E622534150004AA822 /* Assets.xcassets */; };
 		B39E77EA22534150004AA822 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39E77E822534150004AA822 /* LaunchScreen.storyboard */; };
@@ -40,7 +39,6 @@
 		B39E0C6F869B219293655942 /* Pods_AgileEngineImageGalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgileEngineImageGalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39E77DC22534150004AA822 /* AgileEngineImageGalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileEngineImageGalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39E77DF22534150004AA822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B39E77E122534150004AA822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B39E77E422534150004AA822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B39E77E622534150004AA822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B39E77E922534150004AA822 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,19 +114,13 @@
 		B39E77DE22534150004AA822 /* AgileEngineImageGalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				B39E78222253793E004AA822 /* Application */,
 				B39E77F622534178004AA822 /* View */,
 				B39E77F52253416D004AA822 /* Models */,
 				B39E77F422534168004AA822 /* ViewModels */,
 				B39E77F322534163004AA822 /* ViewControllers */,
 				B39E77F22253415D004AA822 /* Network */,
 				B39E77F122534156004AA822 /* Helpers */,
-				B39E77DF22534150004AA822 /* AppDelegate.swift */,
-				B39E77E122534150004AA822 /* ViewController.swift */,
-				B39E77E322534150004AA822 /* Main.storyboard */,
-				B39E77E622534150004AA822 /* Assets.xcassets */,
-				B39E77E822534150004AA822 /* LaunchScreen.storyboard */,
-				B39E77EB22534150004AA822 /* Info.plist */,
-				B39E78102253496A004AA822 /* Configuration.swift */,
 			);
 			path = AgileEngineImageGalleryApp;
 			sourceTree = "<group>";
@@ -191,6 +183,19 @@
 				B39E781822535096004AA822 /* GalleryCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B39E78222253793E004AA822 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B39E77DF22534150004AA822 /* AppDelegate.swift */,
+				B39E77E322534150004AA822 /* Main.storyboard */,
+				B39E77E622534150004AA822 /* Assets.xcassets */,
+				B39E77E822534150004AA822 /* LaunchScreen.storyboard */,
+				B39E77EB22534150004AA822 /* Info.plist */,
+				B39E78102253496A004AA822 /* Configuration.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,7 +344,6 @@
 				B39E7805225344D3004AA822 /* FullPhoto.swift in Sources */,
 				B39E77FB225341C1004AA822 /* PhotoViewController.swift in Sources */,
 				B39E780E225348C0004AA822 /* API.swift in Sources */,
-				B39E77E222534150004AA822 /* ViewController.swift in Sources */,
 				B39E7801225342FB004AA822 /* GalleryResponse.swift in Sources */,
 				B39E781A22535096004AA822 /* GalleryCollectionViewCell.swift in Sources */,
 				B39E781422534A77004AA822 /* Observable+Codable.swift in Sources */,
@@ -494,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = AgileEngineImageGalleryApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AgileEngineImageGalleryApp/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = AgileEngineImageGalleryApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AgileEngineImageGalleryApp/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
